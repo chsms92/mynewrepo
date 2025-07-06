@@ -13,7 +13,12 @@ provider "azurerm" {
 }
 
 resource "azurerm_resource_group"  "rg-chandra" {
-    count= length(var.rg_name)
-    name=var.rg_name[count.index]
+    count= 4
+    name=chandra-rg
+    location="East US"
+}
+resource "azurerm_resource_group"  "rg-chandra1" {
+    count= 4
+    name=meraman-rg
     location="East US"
 }
