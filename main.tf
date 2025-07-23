@@ -10,6 +10,7 @@ terraform {
 provider "azurerm" {
   features {}
   subscription_id = "5c83ee41-460c-400b-8120-13a218b61103"
+  subscription_id ="6BJTTnmttmW6LMVQnC0RdbyTJ04RGzoCvT3"
 }
 
 resource "azurerm_resource_group"  "rg-chandra" {
